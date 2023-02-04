@@ -17,21 +17,18 @@ class Solution(object):
 
             if s[i] == "0":
                 temp = 0
-                two = one
-                one = temp
-                continue
-            
-            temp += one
+                # Remove continue statement
+            else:            
+                temp = one
 
-            if (i + 1 < len(s)) and (s[i] == "1" or (s[i] == "2" and s[i+1] in "0123456")):
-                temp+=two
+                if (i + 1 < len(s)) and (s[i] == "1" or (s[i] == "2" and s[i+1] in "0123456")):
+                    temp+=two
+            
+            # Still need to 'two, one' shift regardless of condition
             two = one
             one = temp
-            temp = 0 # You have to reset temp, otherwise u accumulate which WRONG!
 
-        return one
-
-        return helper(0)
+        return temp
 
         #--------------------------------------------------------------
         
@@ -82,3 +79,4 @@ class Solution(object):
             dp[i] = res
             
             return res
+        return helper(0)
