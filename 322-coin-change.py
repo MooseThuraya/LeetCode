@@ -17,7 +17,7 @@ class Solution(object):
                 if a - c >= 0:
                     # for our current amount, we want to see if amount - curCoin is the sol
                     dp[a] = min(dp[a], 1 + dp[a-c])
-        # if there has been no change to the last element in our DP (happens to be dp[amount+1]), return -1, otherwise, we got it
+        # if there has been no change to the last element in our DP (happens to be dp[amount+1]), return -1, otherwise, we got it.
         if dp[-1] == amount+1:
             return -1
         else:
