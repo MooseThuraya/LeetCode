@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        # Edge Case where an sum of nums is odd
+        # Edge Case where an sum of nums is odd.
         if sum(nums)%2==1:
             # If the sum is odd (11) we get 5.5. So, no result will be found.
             return False
