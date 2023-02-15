@@ -4,6 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        # Three solutions
         
         # Two Variable -  Dynamic Programing Solution
         # T(n)
