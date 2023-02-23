@@ -9,6 +9,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # Key: find the left most bad version by keeping track of every bad w/ 'res' until loop termination, return 'res'
         l = 1
         r = n
         m = (l+r)//2

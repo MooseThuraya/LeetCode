@@ -9,6 +9,7 @@ class Solution(object):
         """
         startColor = image[sr][sc]
         def fill(startColor, i, j):
+            # Check for boundaries or wrong cases
             if i >= len(image) or i < 0 or j >= len(image[0]) or j < 0 or image[i][j] == color or image[i][j] != startColor:
                 return
             
