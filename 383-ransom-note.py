@@ -22,4 +22,4 @@ class Solution(object):
         return True
 
         # Time (m) where m is time to iterate over magazine, even if ransomNote is longer, we break when False
-        # Space (1) arguably, we only store 26 letters at worst case, which is constant
+        # Space (1) arguably, we only store 26 letters at worst case, which is constant, so O(1)
