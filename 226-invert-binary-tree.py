@@ -10,6 +10,8 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
+        # We want to think for every node, we need to swap its children
+
         def invert(node):
             if node is None:
                 return
