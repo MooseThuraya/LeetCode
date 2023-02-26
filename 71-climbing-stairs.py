@@ -11,3 +11,6 @@ class Solution(object):
             two = one
             one = temp
         return one
+        
+        #T(n)
+        #S(1)
