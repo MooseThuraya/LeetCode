@@ -13,4 +13,4 @@ class Solution(object):
         return one
         
         #T(n)
-        #S(1)
+        #S(1) constant
