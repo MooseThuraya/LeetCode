@@ -21,5 +21,5 @@ class Solution(object):
 
         # if we still have elements in the end, we havent closed all the brackets
         return False if stack else True
-        #Runs in n time
-        #Runs in n space
+        # T(n)
+        # S(n)
