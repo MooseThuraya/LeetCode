@@ -20,7 +20,7 @@ class Solution(object):
         # S(1): where we only initialize a fixed number of variables, no scaling with n.
 
 
-        # Two Pass Solution
+        # Two Pass Solution - Wouldn't work if it has a loop!
         cur = head
         count = 0
         while cur is not None:
