@@ -17,8 +17,6 @@ class MinStack(object):
             # is empty
             self.minStack.append(val)
 
-        
-
     def pop(self):
         """
         :rtype: None
