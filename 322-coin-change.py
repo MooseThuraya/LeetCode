@@ -22,3 +22,6 @@ class Solution(object):
             return -1
         else:
             return dp[-1]
+        
+        # T(n*m) where n is the length of coins and m is amount
+        # S(m) where we have to store m positions in dp
