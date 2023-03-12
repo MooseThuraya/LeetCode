@@ -38,9 +38,10 @@ class Solution(object):
                     fresh-=1
             
             minutes+=1
-        
         return minutes if fresh == 0 else -1
 
 
         # T(n*m) go thru n*m cells
         # S(n*m) fill queue as we traverse n*m cells
+
+        # Need fresh > 0 because on last q.append(), so we will iterate one more time and minutes+=1 anyway on empty for loop.
