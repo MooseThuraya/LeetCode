@@ -20,7 +20,7 @@ class Solution(object):
             return
         helper(nums, [])
         return res
-        # O(n!) we make (n)(n-1)(n-2)...n!.
+        # O(n!*n) --> T(n): we make (n)(n-1)(n-2)...n!.
         # S(n!) where we make n! in res. At the end for ex1, we have 6 when input nums is 3. 3*2*1 = 6
 
         # [[1,2,3][1,3,2], [2,1,3],[2,3,1], [3,1,2],[3,2,1]]
