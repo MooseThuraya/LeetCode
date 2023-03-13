@@ -6,6 +6,25 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
+        # T(logn): on avg its logn where disregard half of a tree at a time, worst n (imbalanced tree)
+        # S(1): no call stack used
+        node = root
+        while node:
+            if node.val > p.val and node.val > q.val:
+                node = node.left
+            elif node.val < p.val and node.val < q.val:
+                node = node.right
+            else:
+                # case where we are at a split
+                # case where we are p or q
+                return node
+
+
+
+        
+        #T(n)
+        #S(n)
+        
         # Approach:
         # We are going to traverse the tree
         # As a node, if both my children return True, then I am the lowestCommonAncestor
