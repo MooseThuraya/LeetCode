@@ -15,3 +15,6 @@ class Solution(object):
                 if dp[i]:
                     break
         return dp[0]
+    
+        # T(n*m) where n is len s and m is len of wordDict
+        # S(n) where n is len s
