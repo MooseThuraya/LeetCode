@@ -10,18 +10,14 @@ class Solution(object):
             # If the sum is odd (11) we get 5.5. So, no result will be found.
             return False
 
-        dp = set()
-        dp.add(0)
-
-        target = sum(nums)//2
-
+        target = target//2
+        dp = set([0])
         for i in range(len(nums)-1,-1,-1):
-            nextDp = set()
-            for t in dp:
-                if t + nums[i] == target:
-                    return True
-                nextDp.add(t)
-                nextDp.add(t + nums[i])
-            dp = nextDp
-        
+            nextDP = set()
+            for num in dp:
+                nextDP.add(nums[i] + num)
+                nextDP.add(num)
+            dp = nextDP
         return True if target in dp else False
+        # T(n*sum(nums)) where n is len(nums)
+        # S(sum(nums)) We are adding as many elements as our our target sum, sum(nums)
