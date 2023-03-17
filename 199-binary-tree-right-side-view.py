@@ -21,3 +21,5 @@ class Solution:
             if level:
                 res.append(level[0])
         return res
+        # T(n)
+        # S(n) store roughly half the nodes but still n
