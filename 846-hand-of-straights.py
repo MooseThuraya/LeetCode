@@ -21,7 +21,5 @@ class Solution:
                     heapq.heappop(minH)
         return True
 
-
-        
-
-        
+# T(nlogn)
+# S(n)
